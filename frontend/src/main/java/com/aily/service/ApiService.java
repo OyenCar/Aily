@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class ApiService {
 
-    private static final String BASE_URL = "http://54.173.133.69:8000";
+    private static final String BASE_URL = "http://54.204.129.129:8000";
     private static final HttpClient client = HttpClient.newBuilder()
             .version(HttpClient.Version.HTTP_1_1)
             .build();

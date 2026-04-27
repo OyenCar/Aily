@@ -33,14 +33,14 @@ public class App extends Application {
         Parent root = loader.load();
 
         Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
-        Scene scene = new Scene(root, bounds.getWidth(), bounds.getHeight());
+        Scene scene = new Scene(root, bounds.getWidth(), bounds.getHeight()-20);
         scene.getStylesheets().add(App.class.getResource("style.css").toExternalForm());
 
         primaryStage.setScene(scene);
         primaryStage.setX(bounds.getMinX());
         primaryStage.setY(bounds.getMinY());
-        primaryStage.setWidth(bounds.getWidth());
-        primaryStage.setHeight(bounds.getHeight());
+        // primaryStage.setWidth(bounds.getWidth());
+        // primaryStage.setHeight(bounds.getHeight());
         primaryStage.setMaximized(true);
     }
 
